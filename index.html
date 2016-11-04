@@ -1,1 +1,277 @@
-Hello World
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+  font-family: 'Open Sans', Sans-Serif;
+  background-color: rgb(230,230,230);
+  margin:0;
+}
+h2 {
+  font-size:30px;
+}
+p {
+  font-size:20px;
+}
+.mainBody {
+  text-align:center;
+  margin:auto;
+  padding-top:49px;
+  width: 900px;
+}
+.toolbar ul{
+  position:fixed;
+  width: 100%;
+  margin-top:0;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #558C89;
+  z-index:1;
+}
+.toolbar ul li {
+    float: left;
+}
+.toolbar ul li a {
+  display: block;
+  color: white;
+  text-align:center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.toolbar ul li:hover {
+  color: #111;
+  background-color: #D9853B;
+}
+
+.contactButtons {  
+  margin-right:auto;
+  margin-left:auto;
+  font-size:20px;
+  list-style-type:none;
+  text-align: center;
+}
+.contactButtons li {
+  display: inline-block;
+  border-style: solid;
+  border-radius:0.5em;
+  border-width:2px;
+  border-color:black;
+  Background-color: #558C89;
+  margin:10px;
+  padding: 10px;
+  width:150px;
+
+}
+.contactButtons li:hover {
+  color: white;
+  background-color: #D9853B;
+}
+.contactButtons li a { 
+  font-family: font-family: 'Open Sans', San-Serif;
+  color:white;
+  font-size:15px;
+  display: block;
+  text-align:center;
+  padding: 5px 5px;
+  text-decoration: none;  
+}
+.center {
+  text-align:center;
+}
+.home {
+ background-image: url("http://img13.deviantart.net/4f39/i/2016/306/1/2/2014_04_12_16_20_38_by_pshp01-dan1y84.jpg");
+  background-size:100%
+  color:white;
+  padding-top:0.1px;
+  margin-top:0px;
+  background-size:100% 100%;
+}
+h1 {
+  font-size:50px;
+  padding-top:50px;
+  padding-bottom:300px;
+}
+.about {
+  background-image: url("http://img11.deviantart.net/3c4b/i/2016/308/8/8/11951598_10153679953941473_4372991008152150777_o_by_pshp01-dan9g14.jpg");
+  background-size:100% 100%;
+  padding-top:0px;
+  text-align:center;
+}
+.about h2 {
+  padding-top:40px;
+  padding-bottom:10px;
+}
+.about p {
+  padding-bottom:115px;
+}
+.clear{
+  width:460px;
+  height:460px;
+  margin-top:auto;
+  text-align:center;
+  border:solid;
+}
+.portfolio {
+  padding-top:50px;  
+}
+.portfolio h2 {
+  padding-bottom:20px;
+}
+form {
+  width:685px;
+  padding:50px;
+}
+.crop {
+  border-radius: 50%;
+  height: 700px;
+  width: 700px;
+  object-fit:cover;
+}
+.resize {
+  height:250px;
+  width:250px;
+}
+.border {
+  border-color: black;
+  border-style: solid;
+}
+.box {
+  width: 240px;
+  height: 150px;
+  display: inline-block;
+  border:black;
+  border-style:solid;
+  margin:5px;
+}
+.teal {
+  background-color:#5AA5AF;
+}
+.portfolioCrop {
+  height: 150px;
+  width: 100%;
+}
+.white {
+  background-color:white;
+}
+hr {
+  margin-top:20px;
+  margin-bottom:20px;
+  width:80%
+}
+.portfolio img:hover {
+  border-color:#D9853B;
+}
+.contact {
+  background-image: url("http://img06.deviantart.net/119c/i/2016/308/e/8/untitled_by_pshp01-dana2ks.jpg");
+  background-size: 100%, 100%;
+}
+.contact h2 {
+  padding-top:50px;
+  padding-bottom:280px;
+}
+.contact p a {
+  color:cyan;
+  text-decoration:none;
+}
+.contact p a:hover {
+  color: orange; 
+}
+.home, .about, .portfolio, .contact {
+  margin-top:0px;
+  vertical-align: middle;
+  width:100%;
+  height:602px;
+  background-repeat: no;
+  z-index:0; 
+  margin-bottom:40px;
+}
+.margin {
+  margin-left:auto;
+  margin-right:auto;
+}
+.home, .about, .contact {
+  color:white;
+}
+.section {
+  position:relative;
+}
+.section:target {
+  padding-top: 28px;
+}
+.anchor {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  top: -50px;
+  left: 0;
+  visibility: hidden;
+}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>  
+  
+  <div class="toolbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div> <!--close toolbar-->
+   
+  <div class="mainBody center">
+    
+    <div class="home section">
+      <span id="home" class="anchor"></span>
+        <h1 class="padding">Peter Hirsch-Parker</h2>
+        <ul class="contactButtons margin">
+        <li><a href="https://de.linkedin.com/in/peter-hirsch-parker-b96176106"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></li>
+
+        <li><a href="https://github.com/pshp"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a</li>
+
+        <li><a href="https://www.freecodecamp.com/pshp"><i class="fa fa-free-code-camp"></i> FreeCodeCamp</a></li>
+        </ul>
+    </div> <!--close home-->
+  
+    <div class="about section">
+      <span id="about" class="anchor"></span>       
+      <h2>About</h2>
+        
+      <p>A Londoner living in Berlin, and a front-end developer in the making.</p>
+      <img class="clear resize crop border" src="http://orig06.deviantart.net/8d61/f/2016/306/4/8/pretty_by_pshp01-dan1y2f.jpg"></img>
+     
+    </div>                                                                              
+    <div class="portfolio section teal">
+      <span id="portfolio" class="anchor"></span>
+        <hr class="line" color="black">
+        <h2>Portfolio</h2>
+        <p>Here are a few things to look forward to in the near future...</p>
+        <img title="Random Quote Machine" class="box white" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Quotation_Marks.svg/391px-Quotation_Marks.svg.png" href="#">
+        <img  title="Show the Local Weather"class="box" src="http://questgarden.com/142/58/7/120409120134/images/weather-symbols-t9955.jpg" href="#">
+        <img title="Wikipedia Viewer" class="box" src="http://www.glaad.org/sites/default/files/images/2014-08/wikipedia.jpg" href="#" href="#">
+        <img title= "Twitch.tv" class="box white" src="http://oksas.net/twitch/twitch_logo.png" href="#">
+        <img title="JavaScript Calculator" class="box white" src="http://www.clker.com/cliparts/f/9/f/d/11949844091740045309calculator.svg" href="#">
+        <img title="Pomodoro Clock" class="box white" src="https://zapier.cachefly.net/storage/photos/2c319199702ce772b151efbc3d8ea948_2.png" href="#">
+        <hr color="black">
+     <!--close portfolio-->
+    </div>
+
+    <div class="contact section">
+      <span id="contact" class="anchor"></span>             <h2>Contact</h2>
+      <p>Want to get in touch? You can email me:<br>       <a href="mailto:phirschparker@gmail.com">phirschparker@gmail.com</a></p>
+      
+     </div> <!--close contact-->
+    
+  </div> <!--close mainBody-->
+
+</div> <!--close body-->
+</html>
